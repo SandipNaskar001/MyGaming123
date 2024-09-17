@@ -1,0 +1,356 @@
+
+ 
+        @keyframes slide-color {
+            0% {
+              margin-left: 80%;
+              color: rgb(246, 74, 191);
+             
+             
+            }
+            50% {
+              margin-left: 50%;
+              color: rgb(166, 171, 230);
+            }
+            100% {
+              margin-left: 0%;
+              color: rgb(210, 30, 242);
+           
+            }
+          }
+#logo-container img {
+    height: 40px; 
+    width: auto;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #2d1e6b;
+    font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
+}
+
+#navbar {
+    margin: 0 auto;
+    width: 80%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: aliceblue;
+}
+
+#logo-container {
+    display: flex;
+    align-items: center;
+}
+
+#nav-items {
+    position: relative;
+    display: flex;
+    width: 500px;
+    list-style: none;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 400;
+}
+
+#nav-items li {
+
+    cursor: pointer;
+    position: relative; 
+}
+.tooltip {
+    display: none; /* Hidden by default */
+    position: absolute;
+    bottom: 125%; /* Position above the navigation item */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    border-radius: 4px;
+    font-size: 12px;
+    white-space: nowrap; /* Prevents text from wrapping */
+    z-index: 100; /* Ensures tooltip appears above other content */
+}
+#nav-items li:hover .tooltip {
+    display: block; /* Show the tooltip on hover */
+}
+#main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: aliceblue;
+    position: relative;
+}
+
+#main-header .left {
+    position: relative;
+    width: 40%;
+    padding-left: 10%;
+    color: #ffffff;
+}
+
+#main-header .big-text {
+    animation: slide-color 5s ;
+          
+    font-size: 70px;
+    color: #ffffff;
+    font-weight: 600;
+    text-shadow:
+     0 0 5px #ffffff, 
+   
+    0 0 5px #ff00ff;
+ 
+}
+
+#main-header .left p {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+#main-header .buttons {
+    margin-top: 20px;
+}
+.gradient-text
+{
+    color: #ff00f2;
+}
+#main-header .left #overview {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 40px;
+    gap: 15px;
+}
+
+#main-header .overview-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#main-header .overview-items h4 {
+    font-weight: 700;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 3px;
+}
+#main-header .left #overview .overview-items 
+{
+    margin: 0;
+    padding: 0;
+    font-weight: 300;
+}
+#main-header .right {
+    width: 50%;
+    height: 100%;
+    text-align:right ;
+}
+
+#main-header .right img {
+    width: 60%;
+    height:50% ;
+ margin-right: 100px;
+    margin-top: 0;
+   
+}
+.buttons {
+    display: flex;
+}
+
+.btn {
+    padding: 10px 40px; /* Ensure consistent padding */
+    margin: 0 10px;
+    transform: skewX(-10deg);
+    cursor: pointer;
+    border: 1px solid #97079062;
+    background-color: transparent;
+    color: #ffffff; /* Ensure text is visible */
+    text-align: center; /* Center text */
+    width: 150px; /* Set fixed width to make both buttons the same size */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn1 {
+    padding: 10px 40px; /* Ensure consistent padding */
+    margin: 0 10px;
+    transform: skewX(-10deg);
+    cursor: pointer;
+    border: 1px solid #97079062;
+    background-color: transparent;
+    color: #ffffff;
+    text-align: center; 
+    width: 150px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+     background: linear-gradient(45deg, #252cf862 15%, #ff00f2 48%, #a518e662 90%);
+    
+}
+
+.btn:hover, .btn1:hover {
+    background: linear-gradient(45deg, #ff00f2 15%, #a518e6 90%);
+    color: white; /* Hover color adjustment */
+}
+
+.Choose-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.Choose-section-style{
+    font-size: 40px;
+    font-weight: 700;
+}
+.section-description{
+    width: 500px;
+color: #ffffff;
+    font-size: 18px;
+    font-weight: 100;
+}
+.Choose-section .image-carosuel{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.image-carosuel img{
+    width: 400px;
+    height: 300px ;
+    box-shadow: 0 0 15px 5px rgba(0, 255, 255, 0.6); /* Glowing border effect */
+    transition: box-shadow 0.3s ease;
+}
+.image-carosuel :hover {
+    box-shadow: 0 0 25px 10px rgba(0, 255, 255, 1); /* Stronger glow on hover */
+  }
+
+.image-carosuel .center-image{
+    width: 500px;
+    height: 350px ;
+}
+
+.demo-opener {
+    display: block; /* Ensure it's treated as a block element */
+    text-align: center; /* Center the text horizontally */
+    margin: 0 auto; /* Center the element itself */
+    color: #f819b5;
+    font-size: 40px;
+    font-weight: 500;
+    animation: fadeLoop 6s infinite; 
+    width: 100%; 
+}
+
+/* Define the animation */
+@keyframes fadeLoop {
+    0% {
+        opacity: 0; /* Invisible at the start */
+        transform: translateY(10px); /* Moves the text slightly down */
+    }
+    50% {
+        opacity: 1; /* Fully visible in the middle */
+        transform: translateY(0); /* Moves the text to its original position */
+    }
+    100% {
+        opacity: 0; /* Invisible at the end */
+        transform: translateY(-10px); /* Moves the text slightly up */
+    }
+}
+
+
+.discover-section{
+    width: 70%;
+    margin: 100px auto;
+}
+
+.discover-card
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border:  1px solid #ffffff40;
+    border-radius: 7px;
+    background: #35276d;
+    backdrop-filter: blur(4px);
+    box-shadow: 0 0 15px 5px rgba(77, 5, 221, 0.784); 
+    transition: box-shadow 0.3s ease;
+}
+.discover-card img {
+    width: 100%;
+    max-width: 800px; 
+    height: auto; 
+    margin-top: -70px;
+    align-self: flex-start;
+}
+.discover-card-details .big-text
+{
+    font-size: 50px;
+    font-weight: 900;
+    margin: 0;
+}
+.discover-section .discover-card-details-btn {
+    width: fit-content;
+    border: 1px solid rgb(111, 110, 110);
+    padding: 10px 20px;
+    transform: skewX(-20deg);
+    background:linear-gradient(45deg,#464cf362 15%, #f756efd1 48%, #a518e662 90%);
+    cursor: pointer;
+}
+.demo-cards{
+    display: flex; 
+    justify-content: space-between; 
+    align-items: flex-start; 
+    flex-wrap: wrap; 
+    gap: 50px; 
+    margin-bottom: 50px;
+}
+.demo-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px;
+   
+    width: 300px;
+    background: #3b2d7d;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 15px 5px rgba(0, 255, 255, 0.6);
+    transition: box-shadow 0.3s ease;
+}
+
+.demo-card img {
+   
+    width: 100%;
+    height: 350px;
+    border-radius: 10px;
+}
+
+.demo-card h5 {
+    color: white;
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.demo-game-btn {
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #ff00f2;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.demo-game-btn:hover {
+    background-color: #ff66ff;
+}
+
+.demo-card:hover {
+    box-shadow: 0 0 25px 10px rgb(200, 0, 255);
+}
